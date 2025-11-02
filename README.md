@@ -51,7 +51,3 @@ Tweets by influential individuals often cause significant market speculation. Un
 ## Team Members
 - Nicholas Goguen-Compagnoni (ng547)
 - Pranav Dhingra (pd453)
-
-## License
-Specify the license under which this project is released.
-
