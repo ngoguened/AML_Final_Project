@@ -1,0 +1,45 @@
+name: aml-stock-prediction
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+
+  # Data Science Core
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+
+  # Deep Learning (optional, lightweight)
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+
+  # Jupyter
+  - jupyter
+  - ipykernel
+  - ipywidgets
+
+  # Development Tools
+  - black
+  - isort
+  - ruff
+  - pytest
+  - pytest-cov
+
+  # Type Checking
+  - mypy
+
+  # API & Data Collection
+  - requests
+  - tweepy  # Twitter API
+  - python-dotenv  # Environment variables
+
+  # Additional tools via pip
+  - pip:
+      - yfinance  # Stock data
+      - alpha-vantage  # Alternative stock API
+      - transformers  # For advanced NLP models if needed

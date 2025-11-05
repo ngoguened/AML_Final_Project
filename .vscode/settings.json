@@ -1,0 +1,67 @@
+{
+  // Python Configuration
+  "python.defaultInterpreterPath": "${workspaceFolder}/.conda/bin/python",
+
+  // Formatting
+  "editor.formatOnSave": true,
+  "editor.rulers": [88],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  // Black formatter settings
+  "black-formatter.args": ["--line-length", "88"],
+
+  // isort settings for import sorting
+  "isort.args": ["--profile", "black"],
+
+  // Linting with Ruff (fast, modern linter)
+  "python.linting.enabled": true,
+  "python.linting.ruffEnabled": true,
+
+  // Type checking with Pyright
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace",
+
+  // Jupyter Notebooks
+  "[jupyter]": {
+    "files.insertFinalNewline": false
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.organizeImports": "explicit"
+  },
+  "notebook.output.textLineLimit": 50,
+  "jupyter.askForKernelRestart": false,
+
+  // File handling
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // Exclude common directories
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.ipynb_checkpoints": true,
+    "**/.conda": true,
+    "**/*.egg-info": true
+  },
+
+  // Testing
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["-v"],
+
+  // Git
+  "git.ignoreLimitWarning": true,
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "python-envs.pythonProjects": []
+}
